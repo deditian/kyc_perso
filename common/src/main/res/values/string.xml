@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sign_in">Sign In</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+
+    <string name="empty_id">Please enter your ID.</string>
+    <string name="empty_password">Please enter password.</string>
+    <string name="something_s_wrong">Something\'s wrong!\nPlease Contact KYC-PERSO</string>
+    <string name="alert_server_no_response">Server is not responding now.\nPlease try again later.</string>
+
+    <string name="toast_download_token_failed">Download access token failed</string>
+    <string name="toast_download_token_success">Download access token success</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="registration_caption">Don`t have an account? <b>Sign Up</b></string>
+    <string name="full_name">Full name</string>
+    <string name="ektp_photo">ektp photo</string>
+    <string name="upload_ektp">Upload E-KTP</string>
+    <string name="nik_number">NIK</string>
+    <string name="kota_arus_mudik_dan_balik">kota arus mudik dan balik</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email</string>
+    <string name="active_mobile_number">Active handphone number</string>
+    <string name="city_according_to_Idcard">City according to E-KTP</string>
+    <string name="address">Address according to E-KTP</string>
+    <string name="man">Male</string>
+    <string name="female">Female</string>
+
+
+
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="320dp"
+        android:layout_margin="16dp"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/background_round_white">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_baseline_error_24"
+            android:scaleType="fitCenter"
+            app:tint="@color/error_active" />
+
+        <TextView
+            android:id="@+id/error_response_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="00XX"
+            android:textSize="20sp"
+            android:textColor="@color/error_active"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/error_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="@string/something_s_wrong"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/error_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp"
+            android:textAllCaps="false"
+            android:text="@string/alert_server_no_response"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_cancel"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="6dp"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                app:strokeWidth="0dp"
+                android:textSize="12sp"
+                android:textColor="@color/gray_light"
+                android:text="Cancel"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_ok"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="6dp"
+                android:insetBottom="0dp"
+                android:insetTop="0dp"
+                android:backgroundTint="@color/error_active"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                tools:icon="@drawable/ic_baseline_print_24"
+                app:iconSize="20dp"
+                android:text="OK"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

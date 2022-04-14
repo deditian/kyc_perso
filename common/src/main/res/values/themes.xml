@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.KYC_PERSO" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_active</item>
+        <item name="colorPrimaryVariant">@color/primary</item>
+        <item name="colorOnPrimary">@color/primary_inactive</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary_active</item>
+        <item name="colorSecondaryVariant">@color/secondary_inactive</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">true</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.KYC_PERSO.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:forceDarkAllowed" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="Theme.KYC_PERSO.LightStatusBar" parent="Theme.KYC_PERSO.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.Light.DarkActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="Theme.MaterialComponents.Light" />
+</resources>

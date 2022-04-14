@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_active">#BD068F</color>
+    <color name="primary_inactive">#EBF2F9</color>
+    <color name="primary_active_sec">#FBDBC4</color>
+
+    <color name="secondary_active">#04C7D3</color>
+    <color name="secondary_inactive">#D7FCFE</color>
+
+    <color name="error_active">#FF1F3C</color>
+    <color name="error_inactive">#FFEBED</color>
+
+    <color name="success_active">#00BD12</color>
+    <color name="success_inactive">#D6FFDA</color>
+
+    <color name="gray_active">#14191F</color>
+    <color name="gray_inactive">#647D9B</color>
+    <color name="gray_active_sec">#647D9B</color>
+
+    <color name="purple_active">#BD068F</color>
+
+    <color name="primary">#112336</color>
+    <color name="background">#FAFFFF</color>
+
+    <color name="gray_light">#C4C4C4</color>
+</resources>
