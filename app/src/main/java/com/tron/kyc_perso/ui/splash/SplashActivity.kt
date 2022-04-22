@@ -5,18 +5,18 @@ import android.os.Bundle
 import android.preference.PreferenceManager
 import android.util.Log
 import android.widget.Toast
+import androidx.lifecycle.lifecycleScope
 import com.tron.common.SetupApp
 import com.tron.common.SetupApp.CheckBalanceActivity
 import com.tron.common.databinding.ActivitySplashBinding
 import com.tron.common.repositories.ApiResponse
-import com.tron.common.util.Constants
-import com.tron.common.util.Pref
-import com.tron.common.util.obtainViewModel
-import com.tron.common.util.showToast
+import com.tron.common.util.*
 import com.tron.kyc_perso.BuildConfig
 import com.tron.kyc_perso.R
+import com.tron.kyc_perso.ui.login.LoginActivity
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 
 class SplashActivity : AppCompatActivity() {
@@ -34,6 +34,16 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+//        lifecycleScope.launch {
+//            delay(2000L)
+//            gotoActivityNewTask(LoginActivity::class)
+//        }
+
+        binding.btnSplash.setOnClickListener {
+            gotoActivityNewTask(LoginActivity::class)
+        }
+
 
         Pref.setString(Constants.VAL_TOKEN_TECH, "")
     }

@@ -13,6 +13,9 @@ public class GeneralResponse implements Serializable {
     @SerializedName("midware_timestamp")
     private String midwareTimestamp;
 
+    @SerializedName("server_timestamp")
+    private String serverTimestamp;
+
     @SerializedName("message")
     private String message;
 
@@ -47,6 +50,7 @@ public class GeneralResponse implements Serializable {
     public GeneralResponse(GeneralResponse response) {
         responseCode = response.getResponseCode();
         midwareTimestamp = response.getMidwareTimestamp();
+        serverTimestamp = response.getserverTimestamp();
         message = response.getMessage();
         status = response.getStatus();
     }
@@ -65,6 +69,14 @@ public class GeneralResponse implements Serializable {
 
     public String getMidwareTimestamp() {
         return midwareTimestamp;
+    }
+
+    public void setserverTimestamp(String serverTimestamp) {
+        this.serverTimestamp = serverTimestamp;
+    }
+
+    public String getserverTimestamp() {
+        return serverTimestamp;
     }
 
     public void setMessage(String message) {

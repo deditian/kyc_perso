@@ -29,7 +29,7 @@ class LoginActivity : BaseActivity() {
 
         binding.btnLogin.setOnClickListener { validationLogin() }
 
-        binding.signUp.setOnClickListener { gotoActivityNewTask(RegisterActivity::class) }
+        binding.signUp.setOnClickListener { gotoNewActivity(RegisterActivity::class) }
 
         binding.etUserId.editText?.doOnTextChanged { _, _, _, count ->
             binding.etUserId.isErrorEnabled = count == 0

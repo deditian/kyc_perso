@@ -7,6 +7,7 @@ import com.tron.common.network.auth.model.PublicKeyRequest
 import com.tron.common.network.auth.model.ResponseEnc
 import com.tron.common.network.cardpay.GeneralRequest
 import com.tron.common.network.model.GeneralResponse
+import com.tron.common.network.model.UserRegistration
 import com.tron.common.network.model.auth.Auth
 import com.tron.common.network.model.auth.model.AuthRequest
 import com.tron.common.network.model.auth.model.AuthResponse
@@ -17,6 +18,26 @@ import com.tron.common.util.MyFunctions
 import com.tron.common.util.Pref
 
 class AuthRepository(application: Application) {
+
+    fun regis(regisPost: UserRegistration): LiveData<ApiResponse<User>> {
+        val data = MutableLiveData<ApiResponse<User>>()
+
+        val time = System.currentTimeMillis().toString()
+//        val encryptedPassword = MyFunctions.encryptByMD5(regisPost.passHash)
+//        val encryptedTimeWithPassword = MyFunctions.encryptBySHA256(time + encryptedPassword)
+
+//        val request = regisPost.copy(passHash = encryptedTimeWithPassword, deviceTimestamp = time)
+        data.value = ApiResponse.Loading
+
+//        Auth.dongleRegistration(request, { response ->
+//            val user: User = MyFunctions.stringToClass(response, User::class.java)
+//            data.value = ApiResponse.Success(user)
+//        }, { error ->
+//            data.value = ApiResponse.Error(error)
+//        })
+
+        return data
+    }
 
     fun login(authRequest: AuthRequest): LiveData<ApiResponse<User>> {
         val data = MutableLiveData<ApiResponse<User>>()

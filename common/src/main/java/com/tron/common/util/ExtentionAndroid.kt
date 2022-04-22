@@ -66,7 +66,11 @@ fun Activity.showToast(message: String) {
 
 fun <K: Activity> Activity.gotoActivityNewTask(klass: KClass<K>) {
     startActivity(Intent(this, klass.java)
-//        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
+        .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK)
     )
-//    finish()
+    finish()
+}
+
+fun <K: Activity> Activity.gotoNewActivity(klass: KClass<K>) {
+    startActivity(Intent(this, klass.java))
 }
